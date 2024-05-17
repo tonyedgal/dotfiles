@@ -26,9 +26,13 @@ export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
+# zhann is my favorite theme
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="pygmalion"
-ZSH_THEME="geoffgarside"
+# ZSH_THEME="mgutz"
+# ZSH_THEME="jnrowe"
+# ZSH_THEME="superjarin"
+# ZSH_THEME="geoffgarside"
+ZSH_THEME="zhann"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
