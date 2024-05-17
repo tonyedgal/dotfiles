@@ -1,1 +1,1 @@
-# wsl-zsh
+# dotfiles
