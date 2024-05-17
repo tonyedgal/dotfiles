@@ -130,7 +130,7 @@ alias ls="colorls --group-directories-first"
 alias lss="/bin/ls"
 alias dcu="docker compose up"
 alias dcd="docker compose down"
-alias dcu="docker compose build"
+alias dcb="docker compose build"
 # export KEYTIMEOUT=10
 
 export NVM_DIR="$HOME/.nvm"
