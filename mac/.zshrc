@@ -32,6 +32,7 @@ export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border"
 # ZSH_THEME="superjarin"
 # ZSH_THEME="geoffgarside"
 ZSH_THEME="zhann"
+# ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -126,11 +127,25 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ls="colorls --group-directories-first"
-alias lss="/bin/ls"
+# alias ls="colorls --group-directories-first"
+# alias lss="/bin/ls"
 alias dcu="docker compose up"
 alias dcd="docker compose down"
 alias dcb="docker compose build"
+alias ga="git add"
+alias gc="git commit"
+alias gcm="git commit -m"
+alias gco="git checkout"
+alias gcb="git checkout -b"
+alias gp="git push"
+alias gpl="git pull"
+alias gw="git worktree"
+alias yrd="yarn run dev"
+alias yrt="yarn run test"
+alias yrec="yarn run eslint:check"
+alias yref="yarn run eslint:fix"
+alias yrpc="yarn run prettier:check"
+alias yrpf="yarn run prettier:fix"
 # export KEYTIMEOUT=10
 
 export NVM_DIR="$HOME/.nvm"
@@ -190,7 +205,7 @@ bindkey -s '^o' 'lfcd\n'
 # Edit line in vim with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
-source $(dirname $(gem which colorls))/tab_complete.sh
+# source $(dirname $(gem which colorls))/tab_complete.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=3"
@@ -200,3 +215,18 @@ complete -o nospace -C /usr/local/bin/terraform terraform
 
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Load rbenv
+# source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+# source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+# chruby ruby-3.1.3
+# export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+# export LDFLAGS="-L/opt/homebrew/opt/ruby/lib"
+# export CPPFLAGS="-I/opt/homebrew/opt/ruby/include"
+
+# if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
+#   export PATH=/opt/homebrew/opt/ruby/bin:$PATH
+#   export PATH=`gem environment gemdir`/bin:$PATH
+# fi
+
+PATH=~/.console-ninja/.bin:$PATH
