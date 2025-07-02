@@ -132,6 +132,7 @@ source $ZSH/oh-my-zsh.sh
 alias dcu="docker compose up"
 alias dcd="docker compose down"
 alias dcb="docker compose build"
+alias dps="docker ps"
 alias ga="git add"
 alias gc="git commit"
 alias gcm="git commit -m"
