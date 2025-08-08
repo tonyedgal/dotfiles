@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/usr/local/Cellar/llvm/10.0.1/bin/clangd:$PATH"
 export PATH="usr/local/opt/llvm/bin/clangd:$PATH"
-export PATH="$HOME/go/bin:$PATH"
+export PATH="/Users/tony/go/bin:$PATH"
 export PATH="$PATH:/usr/local/sbin"
 export PATH="$PATH:/opt/homebrew/bin"
 export PATH="$PATH:/usr/local/go/bin"
@@ -133,6 +133,7 @@ alias dcu="docker compose up"
 alias dcd="docker compose down"
 alias dcb="docker compose build"
 alias dps="docker ps"
+alias dcps="docker-compose ps"
 alias ga="git add"
 alias gc="git commit"
 alias gcm="git commit -m"
@@ -141,12 +142,27 @@ alias gcb="git checkout -b"
 alias gp="git push"
 alias gpl="git pull"
 alias gw="git worktree"
+
 alias yrd="yarn run dev"
 alias yrt="yarn run test"
+
+alias prd="pnpm run dev"
+alias prt="pnpm run test"
+
 alias yrec="yarn run eslint:check"
 alias yref="yarn run eslint:fix"
+alias yredc="yarn run eslint-check"
+alias yredf="yarn run eslint-fix"
 alias yrpc="yarn run prettier:check"
 alias yrpf="yarn run prettier:fix"
+
+alias prec="pnpm run eslint:check"
+alias pref="pnpm run eslint:fix"
+alias predc="pnpm run eslint-check"
+alias predf="pnpm run eslint-fix"
+alias prpc="pnpm run prettier:check"
+alias prpf="pnpm run prettier:fix"
+
 # export KEYTIMEOUT=10
 
 export NVM_DIR="$HOME/.nvm"
@@ -231,3 +247,13 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # fi
 
 PATH=~/.console-ninja/.bin:$PATH
+# Added by Windsurf
+export PATH="/Users/tony/.codeium/windsurf/bin:$PATH"
+
+# Added by Windsurf
+export PATH="/Users/tony/.codeium/windsurf/bin:$PATH"
+
+# search google
+google(){
+  gemini -p "Search google for <query>$1</query> and summarize the results"
+}
